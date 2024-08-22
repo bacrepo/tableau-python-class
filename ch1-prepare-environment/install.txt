@@ -1,0 +1,9 @@
+VSCode
+- https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user
+
+VSCode Extension
+- Python
+- Jupyter
+- Code Runner
+
+
