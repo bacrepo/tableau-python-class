@@ -1,9 +1,26 @@
+Miniconda Install
+==================
+conda update --all -y
+conda install pandas -y
+conda install openpyxl -y
+conda install jupyter -y
+conda install scikit-learn -y
+conda install prophet -y
+
+pip install tabpy
+pip install tabpy-server
+pip install tableauserverclient
+pip install tableauhyperapi
+
+
 VSCode
-- https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user
+======
+https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user
 
 VSCode Extension
+================
 - Python
 - Jupyter
 - Code Runner
-
+- PowerShell
 

@@ -1,0 +1,15 @@
+SCRIPT_REAL("
+
+import numpy as np
+
+r = _arg1
+c = _arg2
+
+ar = np.array(r)
+ac = np.array(c) 
+p = ar - ac 
+
+return p.tolist()
+
+
+", SUM([revenue]), SUM([cost]) )
