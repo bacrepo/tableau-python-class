@@ -1,0 +1,24 @@
+import numpy as np
+import numpy.ma as ma
+from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
+
+# Get Parameter from Tableau
+method = _arg1[0]
+number = _arg2[0]
+
+# Scale Data from raw value to scale from -1 to 1
+sc = StandardScaler()
+col_1 = sc.fit_transform(np.array(_arg3).reshape(-1,1))
+col_2 = sc.fit_transform(np.array(_arg4).reshape(-1,1))
+
+# Alternative way to combine columns
+data = np.column_stack([col_1, col_2])
+
+# For NULL values which will cause clustering error, replace with mean value (x-bar)
+x = np.where(np.isnan(data), ma.array(data, mask=np.isnan(data)).mean(axis=0), data)
+
+kmeans = KMeans(n_clusters = number)
+result = kmeans.fit_predict(x).tolist()
+
+return result

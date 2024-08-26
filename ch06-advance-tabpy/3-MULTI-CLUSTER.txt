@@ -1,0 +1,28 @@
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans, DBSCAN
+
+# Get Parameter from Tableau
+method = _arg1[0]
+number = _arg2[0]
+col_1 = _arg3
+col_2 = _arg4
+
+# Create DataFrame
+c = list(zip(col_1,col_2))
+df = pd.DataFrame(c, columns=['col_1','col_2'])
+df = df.fillna(df.mean())
+
+sc = StandardScaler()
+x = sc.fit_transform(df)
+
+if method == 'kmeans':
+    kmeans = KMeans(n_clusters = number)
+    result = kmeans.fit_predict(x).tolist()
+elif method == 'dbscan':
+    dbsc = DBSCAN()
+    result = dbsc.fit_predict(x).tolist()
+else:
+    pass
+
+return result

@@ -1,0 +1,11 @@
+DATE(
+IF [Trans Date] = {FIXED : MAX([Trans Date])}
+THEN DATEADD('day',[Forecast Days],[Trans Date])
+ELSE [Trans Date]
+END
+)
+
+
+
+
+LAST()=0
