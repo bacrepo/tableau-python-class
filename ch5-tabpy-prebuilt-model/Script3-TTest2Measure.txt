@@ -1,0 +1,6 @@
+SCRIPT_REAL("
+
+return tabpy.query('ttest',_arg1,_arg2)['response'] 
+
+",SUM([Sales CentralSouth]),SUM([Sales EastWest])
+)

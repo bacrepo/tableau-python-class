@@ -1,0 +1,7 @@
+SCRIPT_REAL("
+
+return tabpy.query('anova',_arg1,_arg2,_arg3)['response'] 
+
+",SUM([Sales CentralSouth]),SUM([Sales EastWest]),SUM([Sales])
+
+)

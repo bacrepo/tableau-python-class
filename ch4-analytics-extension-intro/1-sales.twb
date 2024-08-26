@@ -26,7 +26,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='sales' name='textscan.1wflx2e1sds7t914hzeqh1bvxu6x'>
-            <connection class='textscan' directory='C:/tableau-python-class/ch4-analytics-extension-intro' filename='sales.csv' password='' server='' />
+            <connection class='textscan' directory='' filename='sales.csv' password='' server='' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1wflx2e1sds7t914hzeqh1bvxu6x' name='sales.csv' table='[sales#csv]' type='table'>

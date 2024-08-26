@@ -1,0 +1,17 @@
+SCRIPT_REAL("
+
+from nltk.sentiment import SentimentIntensityAnalyzer
+
+text = _arg1
+
+scores = []
+sid = SentimentIntensityAnalyzer()
+
+for word in text:
+    ss = sid.polarity_scores(word)
+    scores.append(ss['compound'])
+
+return scores 
+
+"
+,ATTR([Lyrics]))

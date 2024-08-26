@@ -1,0 +1,3 @@
+C:\miniconda3\Lib\site-packages\tabpy\models\scripts\PCA.py
+
+oneHotEncoder = OneHotEncoder(categories="auto", sparse_output=False)

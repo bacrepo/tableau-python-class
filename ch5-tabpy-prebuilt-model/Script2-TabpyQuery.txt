@@ -1,0 +1,6 @@
+SCRIPT_REAL("
+
+return tabpy.query('Sentiment Analysis', _arg1)['response']
+
+"
+,ATTR([Lyrics]))
