@@ -1,5 +1,5 @@
 import pandas as pd
-from fbprophet import Prophet
+from prophet import Prophet
 
 future_days = _arg1[0]
 ds = _arg2
