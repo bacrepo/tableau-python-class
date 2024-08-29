@@ -5,5 +5,11 @@ df = pd.DataFrame(_arg1)
 // ** TODO ** // Do anything you want :)
 
 
-
 return df.to_dict(orient='list')
+
+
+#############################
+
+Dealing with Timestamp
+
+df['OrderDate'] = pd.to_datetime(df['OrderDate']).astype(str)
