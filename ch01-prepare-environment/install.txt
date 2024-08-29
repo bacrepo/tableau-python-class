@@ -10,16 +10,18 @@ https://repo.anaconda.com/miniconda/Miniconda3-py312_24.5.0-0-Windows-x86_64.exe
 Miniconda Package Install
 =========================
 conda update --all -y
-conda install pandas -y
-conda install openpyxl -y
+
+conda install pandas==2.2.2 -y
+conda install openpyxl==3.1.5 -y
+conda install scikit-learn==1.5.1 -y
+conda install prophet==1.1.5 -y
 conda install jupyter -y
-conda install scikit-learn -y
-conda install prophet -y
 
 pip install tabpy
-pip install tabpy-server
 pip install tableauserverclient
 pip install tableauhyperapi
+
+
 
 VSCode
 ======

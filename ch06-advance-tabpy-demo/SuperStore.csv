@@ -1,4 +1,4 @@
-﻿RowID,OrderID,OrderDate,ShipMode,CustomerName,Segment,Country,State,Region,Product,Category,SubCategory,Sales,Quantity,Discount,Profit
+﻿Row ID,Order ID,Order Date,Ship Mode,Customer Name,Segment,Country,State,Region,Product,Category,Sub-Category,Sales,Quantity,Discount,Profit
 1,CA-2019-152156,2022-11-07,Second Class,Claire Gute,Consumer,United States,Kentucky,South,FUR-BO-10001798,Furniture,Bookcases,261.96,2,0,41.9136
 2,CA-2019-152156,2022-11-07,Second Class,Claire Gute,Consumer,United States,Kentucky,South,FUR-CH-10000454,Furniture,Chairs,731.94,3,0,219.582
 3,CA-2019-138688,2022-06-11,Second Class,Darrin Van Huff,Corporate,United States,California,West,OFF-LA-10000240,Office Supplies,Labels,14.62,2,0,6.8714
