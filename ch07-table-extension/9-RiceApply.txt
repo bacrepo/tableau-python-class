@@ -1,0 +1,11 @@
+import pandas as pd
+from joblib import load
+
+df = pd.Dataframe(_arg1)
+
+## FIX THE PATH
+loaded_model = load(r'C:\\tableau-python-class\\ch07-table-extension\\RiceModel.model')
+
+df['Predict'] = loaded_model.predict(df)
+
+return df.to_dict(orient='list')

@@ -86,9 +86,20 @@
             <aggregation>None</aggregation>
             <contains-null>true</contains-null>
           </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cluster</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Cluster]</local-name>
+            <parent-name>[Tableau_7_1D8BE341-A40C-414E-ADAD-C2FA60867BAA_1_TableauTempExtSvc]</parent-name>
+            <remote-alias>Cluster</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>None</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Cluster]' role='measure' type='quantitative' />
       <column aggregation='None' datatype='string' name='[CustomerName]' role='dimension' type='nominal' />
       <column aggregation='None' datatype='string' name='[OrderDate]' role='dimension' type='nominal' />
       <column aggregation='None' datatype='real' name='[Profit]' role='measure' type='quantitative' />
@@ -107,7 +118,17 @@
                 <script-code>import pandas as pd&#13;
 df = pd.DataFrame(_arg1)&#13;
 &#13;
-df[&apos;OrderDate&apos;] = pd.to_datetime(df[&apos;OrderDate&apos;]).astype(str)&#13;
+from sklearn.preprocessing import MinMaxScaler&#13;
+&#13;
+scaler = MinMaxScaler()&#13;
+columns= [&apos;Sales&apos;, &apos;Profit&apos;]&#13;
+df[columns] = scaler.fit_transform(df[columns])&#13;
+&#13;
+from sklearn.cluster import KMeans&#13;
+kmeans = KMeans(n_clusters=5, random_state=4542)&#13;
+features = df[[&apos;Sales&apos;, &apos;Profit&apos;]]&#13;
+kmeans.fit(features)&#13;
+df[&apos;Cluster&apos;] = kmeans.labels_&#13;
 &#13;
 &#13;
 return df.to_dict(orient=&apos;list&apos;)</script-code>

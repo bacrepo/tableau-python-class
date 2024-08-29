@@ -15,12 +15,15 @@ conda install pandas==2.2.2 -y
 conda install prophet==1.1.5 -y
 conda install scikit-learn==1.5.1 -y
 conda install openpyxl==3.1.5 -y
+conda install statsmodels==0.14.2 -y
 conda install jupyter -y
 
-pip install tabpy
-pip install tableauserverclient
-pip install tableauhyperapi
+pip install tabpy==2.10.0
+pip install tableauserverclient==0.32
+pip install tableauhyperapi==0.0.20027
 
+pip install pandas_datareader==0.1.0
+pip install yfinance==0.2.30
 
 
 VSCode
@@ -38,3 +41,8 @@ Additional Software
 https://www.7-zip.org/a/7z2408-x64.msi
 https://github.com/git-for-windows/git/releases/download/v2.46.0.windows.1/Git-2.46.0-64-bit.exe
 https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.6.9/npp.8.6.9.Installer.x64.exe
+
+
+
+git config --global user.email "tableau-training@bac.co.th"
+git config --global user.name "tableau-training"

@@ -86,9 +86,20 @@
             <aggregation>None</aggregation>
             <contains-null>true</contains-null>
           </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[Cost]</local-name>
+            <parent-name>[Tableau_7_1D8BE341-A40C-414E-ADAD-C2FA60867BAA_1_TableauTempExtSvc]</parent-name>
+            <remote-alias>Cost</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>None</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
+      <column aggregation='None' datatype='real' name='[Cost]' role='measure' type='quantitative' />
       <column aggregation='None' datatype='string' name='[CustomerName]' role='dimension' type='nominal' />
       <column aggregation='None' datatype='string' name='[OrderDate]' role='dimension' type='nominal' />
       <column aggregation='None' datatype='real' name='[Profit]' role='measure' type='quantitative' />
@@ -107,8 +118,7 @@
                 <script-code>import pandas as pd&#13;
 df = pd.DataFrame(_arg1)&#13;
 &#13;
-df[&apos;OrderDate&apos;] = pd.to_datetime(df[&apos;OrderDate&apos;]).astype(str)&#13;
-&#13;
+df[&apos;Cost&apos;] = df[&apos;Sales&apos;] - df[&apos;Profit&apos;]&#13;
 &#13;
 return df.to_dict(orient=&apos;list&apos;)</script-code>
                 <input>
