@@ -1,0 +1,14 @@
+import requests
+import pandas as pd
+from datetime import datetime, timedelta
+
+url = 'https://covid19.ddc.moph.go.th/api/Cases/timeline-cases-all'
+response = requests.get(url)
+data = response.json()
+raw_df = pd.DataFrame(data)
+
+df = raw_df[['year','weeknum','new_case','total_case']].copy(deep=True)
+df['date'] = pd.to_datetime(df['year'].astype(str) + '-W' + df['weeknum'].astype(str) + '-1', format='%Y-W%W-%w') - timedelta(days=1)
+df['date'] = df['date'].astype(str)
+
+return df.to_dict(orient='list')

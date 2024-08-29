@@ -18,13 +18,12 @@ conda install openpyxl==3.1.5 -y
 conda install statsmodels==0.14.2 -y
 conda install jupyter -y
 
-pip install tabpy==2.10.0
-pip install tableauserverclient==0.32
-pip install tableauhyperapi==0.0.20027
+pip install tabpy==2.10.0 -U
+pip install tableauserverclient==0.32 -U
+pip install tableauhyperapi==0.0.20027 -U
 
-pip install pandas_datareader==0.1.0
-pip install yfinance==0.2.30
-
+pip install pandas_datareader==0.10.0 -U
+pip install yfinance==0.2.30 -U
 
 VSCode
 ======
