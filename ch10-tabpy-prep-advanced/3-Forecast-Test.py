@@ -1,5 +1,5 @@
 import pandas as pd
-from fbprophet import Prophet
+from prophet import Prophet
 
 df_input = pd.read_csv("3-SalesSummary.csv")
 df_input = df_input[['TransDate', 'Sales']]
