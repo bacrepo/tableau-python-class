@@ -1,5 +1,14 @@
-Miniconda Install
-==================
+Tableau Software (Recommend 2023.3++)
+================
+https://downloads.tableau.com/esdalt/2024.2.2/TableauDesktop-64bit-2024-2-2.exe
+https://downloads.tableau.com/esdalt/tableau_prep/2024.2.2/TableauPrep-2024-2-2.exe
+
+Miniconda (Python) Install
+==========================
+https://repo.anaconda.com/miniconda/Miniconda3-py312_24.5.0-0-Windows-x86_64.exe
+
+Miniconda Package Install
+=========================
 conda update --all -y
 conda install pandas -y
 conda install openpyxl -y
@@ -12,7 +21,6 @@ pip install tabpy-server
 pip install tableauserverclient
 pip install tableauhyperapi
 
-
 VSCode
 ======
 https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user
@@ -21,6 +29,10 @@ VSCode Extension
 ================
 - Python
 - Jupyter
-- Code Runner
 - PowerShell
 
+Additional Software
+===================
+https://www.7-zip.org/a/7z2408-x64.msi
+https://github.com/git-for-windows/git/releases/download/v2.46.0.windows.1/Git-2.46.0-64-bit.exe
+https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.6.9/npp.8.6.9.Installer.x64.exe
