@@ -1,6 +1,6 @@
 $envPath = [System.Environment]::GetEnvironmentVariable("Path", [System.EnvironmentVariableTarget]::User).Split(";")
 
-$pathsToAdd = @(
+$pathsToRemove = @(
     "C:\miniconda3",
     "C:\miniconda3\Library\mingw-w64\bin",
     "C:\miniconda3\Library\usr\bin",
@@ -9,13 +9,13 @@ $pathsToAdd = @(
 )
 
 $pathUpdated = $false
-$envPath = $envPath | Where-Object { $pathsToAdd -notcontains $_ }
-$envPath = $pathsToAdd + $envPath
 
+$envPath = $envPath | Where-Object { $pathsToRemove -notcontains $_ }
 $pathUpdated = $true
+
 if ($pathUpdated) {
     [System.Environment]::SetEnvironmentVariable("Path", ($envPath -join ";"), [System.EnvironmentVariableTarget]::User)
-    Write-Output "Environment variable 'Path' updated successfully."
+    Write-Output "Specified paths removed from the environment variable 'Path' successfully."
 } else {
     Write-Output "No changes made to the environment variable 'Path'."
 }

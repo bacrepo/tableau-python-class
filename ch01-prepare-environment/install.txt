@@ -12,9 +12,9 @@ Miniconda Package Install
 conda update --all -y
 
 conda install pandas==2.2.2 -y
-conda install openpyxl==3.1.5 -y
-conda install scikit-learn==1.5.1 -y
 conda install prophet==1.1.5 -y
+conda install scikit-learn==1.5.1 -y
+conda install openpyxl==3.1.5 -y
 conda install jupyter -y
 
 pip install tabpy
