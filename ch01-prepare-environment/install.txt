@@ -5,7 +5,7 @@ https://downloads.tableau.com/esdalt/tableau_prep/2024.2.2/TableauPrep-2024-2-2.
 
 Miniconda (Python) Install
 ==========================
-https://repo.anaconda.com/miniconda/Miniconda3-py312_24.5.0-0-Windows-x86_64.exe
+https://repo.anaconda.com/miniconda/Miniconda3-py312_24.7.1-0-Windows-x86_64.exe
 
 Miniconda Package Install
 =========================
