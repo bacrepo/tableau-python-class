@@ -39,3 +39,4 @@ Post-class support is available for 14 days, for topics covered during the cours
 For topics beyond the course scope, such as code fixes, debugging, environment setup, or assistance with additional tools (e.g., Docker, Kubernetes, Spark), we offer tailored professional services. Please reach out to our sales representative for more details.
 
 If you need support for real-world applications or further guidance beyond what was covered in class, our solutions consulting service is available to meet your needs.
+
