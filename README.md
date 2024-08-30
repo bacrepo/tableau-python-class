@@ -36,7 +36,10 @@ pip install yfinance==0.2.30 -U
 
 Post-class support is available for 14 days, for topics covered during the course. We are happy to help clarify concepts and assist with exercises related to the course content.
 
+If you need support for real-world applications or further guidance beyond what was covered in class, our solutions consulting service is available to meet your needs.
+
 For topics beyond the course scope, such as code fixes, debugging, environment setup, or assistance with additional tools (e.g., Docker, Kubernetes, Spark), we offer tailored professional services. Please reach out to our sales representative for more details.
 
-If you need support for real-world applications or further guidance beyond what was covered in class, our solutions consulting service is available to meet your needs.
+Please note that the Python library versions used during the class must match exactly with those specified.
+
 
