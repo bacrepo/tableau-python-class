@@ -1,5 +1,7 @@
 # tableau-python-class
 
+2024-08-30 ~ 2024-09-13 
+
 ### Tableau Software (Recommend 2023.3++)
 * https://downloads.tableau.com/esdalt/2024.2.2/TableauDesktop-64bit-2024-2-2.exe
 * https://downloads.tableau.com/esdalt/tableau_prep/2024.2.2/TableauPrep-2024-2-2.exe
